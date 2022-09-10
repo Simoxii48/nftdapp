@@ -99,7 +99,7 @@ export default function NFT() {
         <div className='nftportal mb-4'>
             <div className="container col-lg-11">
               <div className="row items px-3 pt-3">
-                <div className="ml-3 mr-3" style={{ display: "inline-grid", gridTemplateColumns: "repeat(4, 5fr)", columnGap: "20px" }}>
+                <div className="ml-3 mr-3" style={{ display: "inline-grid", gridTemplateColumns: "repeat(3, 5fr)", columnGap: "20px" }}>
                   {apicall.map((nft, i) => {
                     var owner = nft.wallet.toLowerCase();
                       if (owner.indexOf(nft.holder) !== -1) {
