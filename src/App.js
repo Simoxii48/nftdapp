@@ -333,7 +333,7 @@ const refreshPage = ()=>{
               <div>
                 <h1 className="pt-2" style={{ fontWeight: "30" }}>NFT Minter</h1>
               </div>
-              <h3>{balance.result}/1000</h3>
+              <h3>{balance.result}/10000</h3>
               <h6>Your Wallet Address</h6>
               <div className="pb-3" id='wallet-address' style={{
                 color: "#39FF14",
