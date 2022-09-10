@@ -110,28 +110,6 @@ render() {
     var accounts = await web3.eth.getAccounts();
     account = accounts[0];
     document.getElementById('wallet-address').textContent = account;
-
-    try {
-      await activate(injected)
-      localStorage.setItem('isWalletConnected', true)
-    } catch (ex) {
-      console.log(ex)
-    }
-
-    useEffect(() => {
-      const connectWalletOnPageLoad = async () => {
-        if (localStorage?.getItem('isWalletConnected') === 'true') {
-          try {
-            await activate(injected)
-            localStorage.setItem('isWalletConnected', true)
-          } catch (ex) {
-            console.log(ex)
-          }
-        }
-      }
-      connectWalletOnPageLoad()
-    }, [])
-
     contract = new web3.eth.Contract(ABI, NFTCONTRACT);
     vaultcontract = new web3.eth.Contract(VAULTABI, STAKINGCONTRACT);
     var getstakednfts = await vaultcontract.methods.tokensOfOwner(account).call();
