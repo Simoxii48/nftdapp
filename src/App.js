@@ -312,9 +312,7 @@ const refreshPage = ()=>{
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">List NFTs</a>
-                </li>
+                
                 <li class="nav-item">
                   <a class="nav-link">Bridge NFTs</a>
                 </li>
