@@ -335,7 +335,7 @@ const refreshPage = ()=>{
               <div className="pb-3" id='wallet-address' style={{
                 color: "#39FF14",
                 fontWeight: "400",
-                textShadow: "1px 1px 1px black",
+                textShadow: "2px 2px 2px black",
               }}>
                 <label for="floatingInput">Please Connect Wallet</label>
               </div>
